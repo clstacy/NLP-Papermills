@@ -14,6 +14,6 @@ LaTeX: pdfLaTeX
 
 QuitChildProcessesOnExit: Yes
 
-PythonType: conda
-PythonVersion: 3.6.13
-PythonPath: ~/Library/r-miniconda/envs/r-reticulate/bin/python
+PythonType: system
+PythonVersion: 3.8.2
+PythonPath: /usr/bin/python3

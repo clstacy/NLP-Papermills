@@ -9,16 +9,22 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 ```{r}
 library(reticulate)
+use_python("/usr/bin/python", required = T)
 library(tidyverse)
+
+# create a new environment 
+use_virtualenv("r-reticulate")
+
+# install SciPy
+virtualenv_install("r-reticulate", "scipy")
+
+# import SciPy (it will be automatically discovered in "r-reticulate")
+scipy <- import("scipy")
 ```
 
-```{r}
 
-```
-
-
-```{python3}
-#import pandas as pd
+```{python}
+import pandas as pd
 # import PyPDF2
 print('hello')
 x = 5
