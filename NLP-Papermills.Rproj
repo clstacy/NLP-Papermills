@@ -14,6 +14,6 @@ LaTeX: pdfLaTeX
 
 QuitChildProcessesOnExit: Yes
 
-PythonType: system
-PythonVersion: 3.8.2
-PythonPath: /usr/bin/python3
+PythonType: conda
+PythonVersion: 3.8.8
+PythonPath: ~/opt/anaconda3/bin/python
